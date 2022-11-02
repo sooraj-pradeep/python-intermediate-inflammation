@@ -17,8 +17,6 @@ jobs:
   
     # specify the OS of the runner
     runs-on: ${{ matrix.os }}
-    #specify runner
-    runs-on: ubuntu-latest
 
     #define steps
     steps:
