@@ -10,6 +10,13 @@ jobs:
 
   build:
 
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: [3.8, 3.9]
+  
+    # specify the OS of the runner
+    runs-on: ${{ matrix.os }}
     #specify runner
     runs-on: ubuntu-latest
 
