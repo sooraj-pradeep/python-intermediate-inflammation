@@ -36,3 +36,9 @@ def patient_normalise(data):
     '''Normalise patient data'''
     maxes= np.max(data, axis=1)
     return data / maxes[:, np.newaxis]
+
+
+def blank_test(data):
+    """ Blank test"""
+
+    return 0;  

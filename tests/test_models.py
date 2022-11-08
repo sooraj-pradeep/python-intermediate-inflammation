@@ -5,6 +5,8 @@ import numpy.testing as npt
 
 import pytest
 
+exp_zero = 0
+
 @pytest.mark.parametrize("test, expected", 
 [
 ([[0, 0],[0, 0],[0, 0]], [0, 0]),
@@ -67,3 +69,8 @@ def test_patient_normalise(test,expected):
     '''ble'''
     from inflammation.models import patient_normalise
     npt.assert_almost_equal(patient_normalise(np.array(test)),np.array(expected), decimal=2)
+
+
+    def test_blank_test(test , exp_zero):
+        from inflammation.models import blank_test
+        npt.assert_almost_equal(blank_test(np.array(test)),np.array(exp_zero))
