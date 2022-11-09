@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "inflammation"
+version = "1.0.0"
+description = "Analyse all day"
+authors = ["Sooraj Pradeep <sooraj.pradeep@stfc.ac.uk>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+matplotlib = "^3.6.2"
+numpy = "^1.23.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.15.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
